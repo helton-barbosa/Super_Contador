@@ -4,7 +4,7 @@ function contar(){
    let p = window.document.querySelector('input#passo')
    let r = window.document.querySelector('p#resultado')
    
-   if(i.value.length == 0 || f.value.length == 0 || p.value.length == 0){
+   if(i.value.length == 0 || f.value.length == 0){
       window.alert("[ERRO] Insira todos os dados!")
    } else {
       let inicio = Number(i.value)
@@ -13,6 +13,7 @@ function contar(){
 
       if(passo == 0){
          window.alert("Passo inválido! Considerando passo 1")
+         p.value = 1
          passo = 1
       }
 
